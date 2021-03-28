@@ -1,5 +1,18 @@
 # hello-spring
-study project
+Study Project
 
-### inflearn
-https://www.inflearn.com/course/스프링-입문-스프링부트/
+### Source (Inflearn)
+- https://www.inflearn.com/course/스프링-입문-스프링부트/
+
+### Questions
+#### 통합 테스트와 단위테스트
+> 단위 테스트가 훨씬 좋은 테스트일 가능성이 높다.<br>
+> 그렇다면 db를 연동하고 난 후에는 단위테스트를 어떻게 진행하면 되는 걸까?
+
+- 단위 테스트는 주로 서비스 로직에 적용합니다.<br>
+  그런데 DB를 연동하면 이제 단위 테스트가 어려워지지요.<br>
+  그래서 테스트 전용 가짜 repository를 만들어서 테스트 시점에 넣어주어야 합니다.<br>
+  이것을 mock 객체라고 합니다.<br>
+  단순히 테스트를 위해서 진짜 db가 아니라 가짜 객체를 하나 만들어서 넣어준다고 생각하시면 됩니다.<br>
+  그런데 일일이 이런 객체를 만들면 개발자가 너무 귀찮으니까
+  실무에서는 mockito 같은 가짜 객체를 만들어주는 라이브러리를 주로 사용합니다.<br>
